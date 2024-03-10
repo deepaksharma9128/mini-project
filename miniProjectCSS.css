@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif
+}
+
+.main_box{
+    background: url(cameraPic.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.btn_one i{
+    color: white;
+    font-size: 30px;
+    font-weight:bold;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.sidebar_menu{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, .5);
+    transition: all 0.3s linear;
+}
+
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, .5);  
+    height: 60px;
+
+}
+
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sidebar_menu .btn_two i{
+    color: gray;
+    font-size: 20px;
+    line-height: 60px;
+    position: absolute;
+    left: 275px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+
+}
+
+.sidebar_menu .menu li{
+    margin-top: 10px;
+    padding: 15px 20px;
+}
+
+.sidebar_menu .menu i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar_menu .menu i{
+    padding: 8px;
+}
+
+.sidebar_menu .social_media{
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+}
+
+.sidebar_menu .social_media i{
+    color: white;
+    opacity: 0.5;
+    padding: 0 5px;
+
+}
+
+#check{
+    display: none;
+}
+
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 6px rgba(255, 255, 255, .5);
+}
+
+.btn_one i:hover{
+    font-size: 40px;
+}
+
+.btn_two i:hover{
+    font-size: 30px;
+}
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}
+
+#check:checked ~ .sidebar_menu .btn_two i{
+    opacity: 1;
+}
+
+.login {
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.get,
+.get2,
+.get3 {
+    margin: 20px;
+    transition: transform 0.3s linear;
+    box-shadow: 0 0 6px rgba(255, 255, 255, .5);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.get:hover,
+.get2:hover,
+.get3:hover {
+    transform: scale(1.50);
+    color: orange;
+}
+
+
+.container{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.AircraftsImg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+}
+h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding:50px;
+    font-size: 60px;
+    font-family: poppins;
+}
+.details{
+    color: #eee;
+    float: none;
+    font-family: llxb;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 20px;
+    padding-bottom: 30px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0px;
+    text-align: center;
+    text-transform: none;
+    width: 90%;
+}
+img{
+    border-radius: 15px;
+    width: 100%;
+}
+
+
+.footer{
+    color: #555;
+    font-family: llxb;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    padding-bottom: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 60px;
+    text-align: center;
+    text-transform: none;
+    width: 100%;
+    background-color: black;
+}
+
+@media(max-width:375px){
+   .AircraftsImg{
+        padding-top: 25px;
+        padding-bottom: 0;
+    }
+}
